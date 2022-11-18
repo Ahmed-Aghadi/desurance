@@ -28,11 +28,13 @@ Every user can create an insurance contract, which will have following informati
 
 After an insurance contract is created, anyone who wants join a particular contract is supposed to send a request for membership. If every member of that contract accept the request then the user can add himself to the contract.
 
-Judges are selected using chainlink oracles, one for getting random numbers to select judges randomly and other to perform function after certain period which is also done using oracles. So custom logic based automation + random number is used from chainlink oracles.
+Judges are selected using **chainlink oracles**, one for getting random numbers to select judges randomly and other to perform function after certain period which is also done using oracles. So custom logic based **automation** + **random number** is used from chainlink oracles.
 
 If no judges had fullfilled their jobs then everyone except those judges will get their fund inside the pool back. If no claim have majority votes then judges who didn't fullfilled won't get their funds back and everyone else will get their funds back. If claim request is fullfilled then remaining amount is distributed among all the members. Also first judges get their percentage from total pool amount as a prize for fullfilling their job.
 
-All contracts are deployed on polygon mumbai testnet.
+Title, description, and all other texts and responses are stored on **IPFS** using **Web3.storage**.
+
+All contracts are deployed on **polygon mumbai** testnet.
 
 ## Smart Contracts
 
