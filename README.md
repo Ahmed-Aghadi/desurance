@@ -11,6 +11,8 @@
 
 ## Deployements
 
+Deployed website at Vercel: [Desurance](https://desurance-beta.vercel.app/)
+
 ## Details
 
 A decentralised p2p insurance platform where users can create insurance contract and judges will be selected randomly automatically based on the contract conditions and final judgement will be fulfilled automatically after insurance finishes.
@@ -46,7 +48,7 @@ All contracts are deployed on **polygon mumbai** testnet.
 
 ### Verified Smart Contracts on polygonscan
 
-[DesuranceHandle](https://mumbai.polygonscan.com/address/0x376E4e094a5Ff49ab120FaCd2Bbf50dB4C890a0b#code)
+[DesuranceHandle](https://mumbai.polygonscan.com/address/0x4682390c7Be9f4c833533dFd7E0E68356cd96909#code)
 
 ## Tech Stack Used
 
@@ -96,15 +98,29 @@ yarn hardhat deploy --network localhost
 
 Chainlink was used to randomly select an image out of all images of the post while also considering rarities assigned while minting.
 
+[checkUpkeep](https://github.com/Ahmed-Aghadi/desurance/blob/main/smart_contracts/contracts/DesuranceHandle.sol#L178)
+
+[performUpkeep](https://github.com/Ahmed-Aghadi/desurance/blob/main/smart_contracts/contracts/DesuranceHandle.sol#L154)
+
+[fulfillRandomWords](https://github.com/Ahmed-Aghadi/desurance/blob/main/smart_contracts/contracts/DesuranceHandle.sol#L170)
+
 ### Filecoin
 
 Web3.storage was used to store almost all the contents (like title, description in json, etc.) and then to fetch it such that globaly everyone can see and appreciate the content in a decentralized way.
 
+[Uploading json to IPFS](https://github.com/Ahmed-Aghadi/desurance/blob/main/client/my-app/pages/api/json-upload-ipfs.js)
+
+[Storing Insurance title and description as json](https://github.com/Ahmed-Aghadi/desurance/blob/main/client/my-app/components/Upload.jsx#L188)
+
+[Storing reason for Judging insurance claim request as json](https://github.com/Ahmed-Aghadi/desurance/blob/main/client/my-app/components/ClaimRequests.js#L168)
+
+[Storing description insurance claim request as json](https://github.com/Ahmed-Aghadi/desurance/blob/main/client/my-app/components/InsurancePage.jsx#L316)
+
+[Storing description for joining insurance as a member as json](https://github.com/Ahmed-Aghadi/desurance/blob/main/client/my-app/components/InsurancePage.jsx#L402)
+
 ### Polygon
 
 All the smart contracts are deployed on polygon mumbai testnet.
-
-#### Atleast one example:
 
 [Deployements](https://github.com/Ahmed-Aghadi/desurance/tree/main/smart_contracts/deployments)
 
@@ -113,6 +129,12 @@ All the smart contracts are deployed on polygon mumbai testnet.
 ### Orbis.club
 
 Orbis is used to provide users an ability to make comments on any insurance on ceramic network which is based on the IPFS libP2P stack.
+
+[Creating a group](https://github.com/Ahmed-Aghadi/desurance/blob/main/client/my-app/components/Upload.jsx#L245)
+
+[sending posts in the group](https://github.com/Ahmed-Aghadi/desurance/blob/main/client/my-app/components/ChatBox.js#L89)
+
+[fetching posts made in the group](https://github.com/Ahmed-Aghadi/desurance/blob/main/client/my-app/components/ChatBox.js#L108)
 
 ### Mantine UI
 
