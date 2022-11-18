@@ -36,6 +36,8 @@ Title, description, and all other texts and responses are stored on **IPFS** usi
 
 All contracts are deployed on **polygon mumbai** testnet.
 
+**Orbis.club** is used to provide users an ability to make comments on any insurance on **ceramic** network which is based on the **IPFS libP2P stack**.
+
 ## Smart Contracts
 
 [Solidity files](https://github.com/Ahmed-Aghadi/desurance/tree/main/smart_contracts/contracts)
