@@ -13,7 +13,7 @@
 
 Deployed website at Vercel: [Desurance](https://desurance-beta.vercel.app/)
 
-Deployed website at Spheron: [Desurance]([https://desurance-beta.vercel.app](https://desurance-33c740.spheron.app/))
+Deployed website at Spheron: [Desurance](https://desurance-33c740.spheron.app/)
 
 ## Details
 
