@@ -11,6 +11,8 @@
 
 ## Deployements
 
+Deployed website at Vercel: [Desurance](https://desurance-beta.vercel.app/)
+
 ## Details
 
 A decentralised p2p insurance platform where users can create insurance contract and judges will be selected randomly automatically based on the contract conditions and final judgement will be fulfilled automatically after insurance finishes.
